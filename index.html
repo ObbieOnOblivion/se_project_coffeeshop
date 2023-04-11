@@ -21,14 +21,77 @@
 
   <body>
     <div class="page">
-      testing...
 
       <header class="header">
+        <img class="header__logo" src="./images/logo_coffee_shop.svg" alt="logo-image">
+
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a>Menu</a>
+            </li>
+            <li class="nav__link">
+              <a>Recipes</a>
+            </li>
+            <li class="nav__link">
+              <a>Book a table</a>
+            </li>
+            <li class="nav__link">
+              <a>Contacts</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="header__main-wrapper">
+          <h1 class="header__title">
+            <span class="header__span-accent">specialty coffee</span><br><br> in the Practicum Library
+          </h1>
+
+          <p class="header__description">Welcome to our study zone! We've got the coffee to energize
+            you and the cozy vibes to help you get creative.
+          </p>
+
+        </div>
+
+        <img alt="library image" class="header__image" src="./images/inside_coffee_shop.png">
+
+        <div class="header__footer">
+          <p class="header__paragraph">Hours:</p>
+          <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+          <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+        </div>
+        <p class="header__paragraph header__sub-title">200 Success Avenue, The Town of Practicum</p>
 
       </header>
 
       <main class="content">
-          <section class="recipes"></section>
+          <section class="recipes">
+            <h1 class="recipes__title">Recipes</h1>
+            <p class="recipes__subtitle">Check out some recipes we've collected for your home-brewing convenience:</p>
+
+            <div class="recipes__videos">
+              <div>
+                <!-- <iframe id="ytplayer" type="text/html" width="400" height="200"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc"><iframe> -->
+                <iframe width="500" height="281" class="recipes__iframe"></iframe>
+                <div class="recipies__wrapper">
+                  <p class="recipes__video-caption">Aeropress recipe</p>
+                  <p class="recipes__video-caption">~5 min</p>
+                </div>
+              </div>
+
+              <div>
+                <!-- <iframe id="ytplayer" type="text/html" width="400" height="200"
+                src="https://www.youtube.com/embed/st571DYYTR8"><iframe> -->
+                <iframe width="500" height="281" class="recipes__iframe"></iframe>
+                <div class="recipies__wrapper">
+                  <p class="recipes__video-caption">French press recipe</p>
+                  <p class="recipes__video-caption">~15 min</p>
+                </div>
+              </div>
+            </div>
+          </section>
           <section class="menu"></section>
           <section class="reservations"></section>
           <section class="about"></section>
