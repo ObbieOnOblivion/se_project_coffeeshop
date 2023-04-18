@@ -1,0 +1,33 @@
+.card__list-divider{
+  border-bottom: 1px solid black;
+}
+
+.card__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.card__list-items{
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 32px 0px 0px;
+  width: 540px;
+}
+
+.card__list-item{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
