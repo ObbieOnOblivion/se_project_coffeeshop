@@ -22,18 +22,18 @@
     <div class="page">
 
       <header class="header">
-        <img class="header__logo" src="./images/logo_coffee_shop.svg" alt="logo-image">
+        <img class="logo" src="./images/logo_coffee_shop.svg" alt="logo-image">
 
         <nav class="nav">
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#menu">Menu</a>
+              <a class="nav__link" href="#menu">Recipes</a>
             </li>
             <li >
-              <a class="nav__link" href="#recipes">Recipes</a>
+              <a class="nav__link" href="#recipes">Book a table</a>
             </li>
             <li>
-              <a class="nav__link" href="#reservation">Book a table</a>
+              <a class="nav__link" href="#reservation">menu</a>
             </li>
             <li>
               <a class="nav__link" href="#contacts">Contacts</a>
@@ -42,16 +42,15 @@
           </ul>
         </nav>
 
-        <div class="header__main-wrapper">
           <h1 class="header__title">
-            <span class="header__span-accent">specialty coffee</span><br>in the Practicum Library
+            specialty coffee
+            <span class="header__span-accent">in the Practicum Library</span>
           </h1>
 
           <p class="header__description">Welcome to our study zone! We've got the coffee to energize
             you and the cozy vibes to help you get creative.
           </p>
 
-        </div>
 
         <img alt="library image" class="header__image" src="./images/inside_coffee_shop.png">
 
@@ -60,7 +59,7 @@
           <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
           <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
         </div>
-        <p class="header__paragraph header__sub-title">200 Success Avenue, The Town of Practicum</p>
+        <p class="header__paragraph header__paragraph_sub">200 Success Avenue, The Town of Practicum</p>
 
       </header>
 
@@ -70,37 +69,37 @@
             <p class="recipes__subtitle">Check out some recipes we've collected for your home-brewing convenience:</p>
 
             <div class="recipes__videos">
-              <div>
-                <iframe class="recipes__iframe" id="ytplayer" width="500" height="280"
+              <div class="recipes__video">
+                <iframe class="recipes__iframe" id="ytplayer"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"></iframe>
-                <div class="recipes__wrapper">
-                  <p class="recipes__video-caption">Aeropress recipe</p>
-                  <p class="recipes__video-caption">~5 min</p>
-                </div>
+                <p class="recipes__wrapper">
+                  <span class="recipes__video-caption">Aeropress recipe</span>
+                  <span class="recipes__video-caption">~5 min</span>
+                </p>
               </div>
 
-              <div>
-                <iframe class="recipes__iframe" id="ytplayer1" width="500" height="280"
+              <div class="recipes__video">
+                <iframe class="recipes__iframe" id="ytplayer1"
                 src="https://www.youtube.com/embed/st571DYYTR8"></iframe>
-                <div class="recipes__wrapper">
-                  <p class="recipes__video-caption">French press recipe</p>
-                  <p class="recipes__video-caption">~15 min</p>
-                </div>
+                <p class="recipes__wrapper">
+                  <span class="recipes__video-caption">French press recipe</span>
+                  <span class="recipes__video-caption">~15 min</span>
+                </p>
               </div>
             </div>
           </section>
           <section id="reservation" class="reservation">
-            <h3 class="reservation__title">Book a table</h3>
+            <h2 class="reservation__title">Book a table</h2>
             <form class="form reservation__form">
               <fieldset class="form__fieldset">
-                <label class="form__label">Name *</label>
-                <input type="text" placeholder="Name Surname" class="form__input" />
-                <label class="form__label">Number of guests *</label>
-                <input type="number" min="1" max="8" placeholder="1-8" class="form__input" />
-                <label class="form__label">Date & time *</label>
-                <input type="date" class="form__input" />
-                <label class="form__label">Your email *</label>
-                <input type="email" placeholder="email@email.com" class="form__input" />
+                <label for="name" class="form__label">Name *</label>
+                <input id="name" type="text" placeholder="Name Surname" class="form__input" required/>
+                <label for="guest-count" class="form__label">Number of guests *</label>
+                <input id="guest-count" type="number" min="1" max="8" placeholder="1-8" class="form__input" required/>
+                <label for="date-time" class="form__label">Date & time *</label>
+                <input id="date-time" type="date" class="form__input" required/>
+                <label for="mail" class="form__label">Your email *</label>
+                <input id="mail" type="email" placeholder="email@email.com" class="form__input" required />
               </fieldset>
               <button type="submit" class="form__button" >
                 Book a table
@@ -112,12 +111,12 @@
             </form>
           </section>
           <section id="menu" class="menu">
-            <h4 class="menu__title">Menu</h4>
+            <h2 class="menu__title">Menu</h2>
             <p class="menu__subtitle">We brew coffee from locally roasted, Fairtrade certified
               beans and use biodegradable cups. All teas from our collection are $2/cup.</p>
             <div class="menu__cards">
               <div class="card">
-                <h5 class="card__title">Filter</h5>
+                <h3 class="card__title">Filter</h3>
                 <ul class="card__list-items">
                   <li class="card__list-item">
                     Regular (12 oz)
@@ -152,7 +151,7 @@
                 </ul>
               </div>
               <div class="card">
-                <h5 class="card__title">Espresso</h5>
+                <h3 class="card__title">Espresso</h3>
                 <ul class="card__list-items">
                   <li class="card__list-item">
                     Macchiato
@@ -181,7 +180,7 @@
                 </ul>
               </div>
               <div class="card">
-                <h5 class="card__title">Baked Goods</h5>
+                <h3 class="card__title">Baked Goods</h3>
                 <ul class="card__list-items">
                   <li class="card__list-item">
                     Almond Croissant
@@ -224,7 +223,7 @@
             </div>
           </section>
           <section class="about">
-            <h6 class="about__title">About the coffee shop</h6>
+            <h2 class="about__title">About the coffee shop</h2>
             <div class="about__content">
               <p class="about__paragraph">Our coffee shop is located in the Practicum Library's hall.
                 It features 6 tables and free WiFi.</p>
@@ -240,17 +239,19 @@
 
       <footer id="contacts" class="footer">
         <div class="footer__content">
-          <img alt="footer logo" class="footer__logo" src="/images/practicum_logo.svg">
+          <img alt="footer logo" class="footer__logo" src="./images/practicum_logo.svg">
           <div class="footer__wrapper">
             <h6 class="footer__social-heading">Social media</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <img alt="facebook" class="footer__social-icon" src="/images/facebook_white.svg">
-                <a class="footer__social-link">Facebook</a>
+                <a class="footer__social-link" href="#">
+                  <img alt="facebook" class="footer__social-icon" src="./images/facebook_white.svg">
+                  Facebook</a>
               </li>
               <li class="footer__list-item">
-                <img alt="instagram" class="footer__social-icon" src="/images/instagram_white.svg">
-                <a class="footer__social-link">Instagram</a>
+                <a class="footer__social-link" href="#">
+                  <img alt="instagram" class="footer__social-icon" src="./images/instagram_white.svg">
+                  Instagram</a>
               </li>
             </ul>
           </div>

@@ -1,84 +1,64 @@
-.about{
-  position:relative;
-  background-color: #0A2850;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: auto;
-  overflow: hidden;
-  height: 426px;
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
 }
-.about__title{
-  font-family: "Inter";
-  font-style: normal;
+
+.about {
+  background-color: #0a2750;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__title {
+  margin-top: 100px;
+  margin-left: 80px;
+  max-width: 251px;
+  z-index: 1;
+  font-family: "Inter", Arial, serif;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  position: absolute;
-  top:100px;
-  left: 80px;
-  max-width: 251px;
-  margin: 0px;
-  z-index: 1;
-  color: #fff;
-
 }
 
-.about__content{
+.about__content {
+  max-width: 660px;
+  margin: 119px 80px 173px auto;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
-  max-width: 660px;
-  position: absolute;
-  top:119px;
-  right:80px;
-  margin-bottom: 173px;
-  color: #fff;
-}
-
-.about__paragraph{
-  font-family: 'Noto Serif';
-  font-style: normal;
+  gap: 20px;
+  z-index: 1;
+  font-family: "Noto Serif", "Times New Roman", "sans-serif";
   font-weight: normal;
   font-size: 20px;
-  line-height: 32px;
-  margin: 0px;
+  line-height: 30px;
+  margin-left: auto;
 }
 
-.about__circle{
-  position: absolute;
+.about__paragraph {
+  margin: 0;
+}
+
+.about__circle {
+  background-color: #2f80ed;
   width: 426px;
   height: 426px;
-  background-color: #2f80ed;
   border-radius: 50%;
-  top:-152px;
-  left:-129px;
-
+  position: relative;
+  top: -152px;
+  left: -129px;
 }
 
-.about__circle_animation_blurred{
-  position: absolute;
-  width: 426px;
-  height: 426px;
-  background-color: #2f80ed;
-  border-radius: 50%;
-  top:-152px;
-  left:-129px;
-  animation: pulsate 1.3s ease-in-out 0 infinite forwards;
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out infinite;
 }
-
-@keyframes pulsate{
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 0.6;
-  }
-  100%{
-    transform: scale(1.3);
-  }
-
-}
-
-
-

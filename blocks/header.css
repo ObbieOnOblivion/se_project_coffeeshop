@@ -7,21 +7,14 @@
   background-position: center;
   box-sizing: border-box;
   height: 100vh;
+  z-index: 0;
 }
 
 .header__main-wrapper{
-  position:absolute;
+  position:relative;
   top: 232px;
   left: 80px;
   margin: 0px;
-}
-
-.header__logo{
-  width: 125px;
-  height: 142px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
 }
 
 .header__paragraph{
@@ -34,10 +27,14 @@
   margin: 0px;
 }
 
-.header__sub-title{
-  position: absolute;
+.header__paragraph_sub{
+  position: relative;
   right: 80px;
   bottom: 40px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 80px;
+  margin-bottom: 40px
 
 }
 
@@ -50,6 +47,8 @@
   /* position: absolute; */
   max-width: 729px;
   margin: 0px;
+  margin-top: 232px;
+  margin-left: 80px;
 
 }
 
@@ -73,6 +72,7 @@
   /* position: absolute; */
   margin: 0px;
   margin-top: 28px;
+  margin-left: 80px;
 
 }
 .header__footer{
@@ -86,4 +86,5 @@
   position: absolute;
   top: 124px;
   right: 5px;
+  z-index: -1;
 }
