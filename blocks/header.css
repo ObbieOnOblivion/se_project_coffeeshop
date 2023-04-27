@@ -25,6 +25,7 @@
   line-height: 20px;
   color: #838383;
   margin: 0px;
+  align-self: flex-end;
 }
 
 .header__paragraph_sub{
@@ -36,6 +37,10 @@
   margin-right: 80px;
   margin-bottom: 40px
 
+}
+
+.header__paragraph-group{
+  margin-right: 700px;
 }
 
 .header__title{
@@ -79,6 +84,8 @@
   position: absolute;
   left: 80px;
   bottom: 40px;
+  display: flex;
+
 }
 .header__image{
   width: 646px;
