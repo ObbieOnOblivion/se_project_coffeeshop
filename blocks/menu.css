@@ -10,18 +10,19 @@
 }
 
 .menu__title{
-  font-family: "Inter", Arial, serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   max-width: 780px;
   margin-top: 100px;
+  margin-bottom: 0px;
 }
 
 .menu__subtitle{
   margin: 0px;
-  font-family: "Noto Serif", "Times New Roman", "sans-serif";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

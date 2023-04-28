@@ -1,5 +1,5 @@
 .nav{
-  font-family: "Inter", Arial, "Sans Serif";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -25,8 +25,12 @@
   list-style-type: none;
   text-decoration: none;
   color:black;
+  transition: color;
+  transition-delay: .1s;
+  transition-timing-function: ease;
 }
 
 .nav__link:hover{
+  color: #96DED1;
 
 }
