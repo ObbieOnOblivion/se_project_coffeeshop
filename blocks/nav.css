@@ -25,12 +25,10 @@
   list-style-type: none;
   text-decoration: none;
   color:black;
-  transition: color;
-  transition-delay: .1s;
-  transition-timing-function: ease;
+  transition: color .3s ease-in .1s;
 }
 
 .nav__link:hover{
-  color: #96DED1;
+  color: #2f80ed;
 
 }
